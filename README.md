@@ -18,3 +18,20 @@ adb sideload lineage-14.1-*-nightly-i9100-signed.zip
 adb sideload open_gapps-arm-7.1-nano-*.zip
 adb sideload addonsu-14.1-arm-signed.zip # if root is needed
 ```
+
+# Lineage-14.1-Nexus-5
+
+### Fastboot: Volume Down,Volume Up and Power
+
+```
+adb reboot bootloader
+fastboot oem unlock
+fastboot flash recovery twrp-x.x.x-x-hammerhead.img
+```
+In twrp
+```
+adb push lineage-14.1-*-hammerhead-signed.zip /sdcard/
+adb push open_gapps-arm-7.1-nano-*.zip /sdcard/
+
+```
+
