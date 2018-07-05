@@ -35,3 +35,21 @@ adb push open_gapps-arm-7.1-nano-*.zip /sdcard/
 
 ```
 
+
+# Lineage 15.1 on Xiaomi Redmi 2 Pro (Wingtech Redmi 2) 
+Model HM2014811, HM 2LTE-CU -  2014811
+### Fastboot: Volume Down and Power or adb reboot bootloader
+```
+sudo fastboot oem device-info
+sudo fastboot flash recovery twrp-3.2.2-0-wt88047.img
+```
+### Recovery mode: Volume Down,Volume Up and Power
+Make backups 
+Select Wipe and then Advanced Wipe.
+Select Cache, System and Data partitions to be wiped and then Swipe to Wipe.
+```
+adb push  lineage-15.1-20180703-nightly-wt88047-signed.zip /sdcard/
+adb push  open_gapps-arm-8.1-pico-20180705.zip  /sdcard/
+```
+
+
