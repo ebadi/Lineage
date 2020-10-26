@@ -162,6 +162,15 @@ Number  Start     End        Size       File system  Name      Flags
 (parted)
 
 
+rm 30
+rm 29
+rm 28
+rm 27
+rm 26
+rm 25
+rm 24
+rm 23
+
 
 mkpart system  461920s 3978502s
 name 23 system
@@ -181,6 +190,7 @@ mkpart userdata 4897095s 100%
 name 30 userdata
 
 
+q for quitting
 
 
 make_ext4fs /dev/block/mmcblk0p23
@@ -196,7 +206,7 @@ fastboot flash persist persist.img
 
 fastboot boot twrp-3.4.0-0-wt88047.img
 
-adb pull :
+adb push to /sdcard/:
 
 lineage-17.1-20200926-recovery-wt88047.img
 open_gapps-arm-10.0-pico-20200927.1.zip
@@ -212,5 +222,10 @@ install lineage package in TWRP.
 install open_gapps package
 
 ```
+
+
+
+# restore to default partition table
+fastboot flash partition gpt_both0.bin
 
 
