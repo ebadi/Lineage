@@ -214,12 +214,14 @@ open_gapps-arm-10.0-pico-20200927.1.zip
 install lineage package in TWRP.
 
 1.Go to TWRP.
-2. Wipe
-3.Select System.
-4.Repair files.
-5.Clean 
+2.Advanced Wipe
+3.Select System
+4.Repair files/Resize files
+5.Clean
 
 install open_gapps package
+
+This may not work in the first time, pe persistant!!!
 
 ```
 
