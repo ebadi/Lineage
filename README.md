@@ -230,4 +230,8 @@ This may not work in the first time, pe persistant!!!
 # restore to default partition table
 fastboot flash partition gpt_both0.bin
 
+# Xiaomi Mi 10 lite
+https://technolobe.com/2020/08/17/how-to-remove-bloatware-from-any-xiaomi-device/
+
+All com.miui apps can be unistalled and reinstalled
 
